@@ -16,7 +16,7 @@ export type Store = t.TypeOf<typeof storeType>;
 
 export const getStores = (): Store[] => {
     try {
-        const storesInfo = require("../stores.json");
+        const storesInfo = require("../storesInfo.json");
         if (storesType.is(storesInfo)) {
             return (storesInfo.stores);
         }

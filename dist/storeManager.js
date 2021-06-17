@@ -31,7 +31,7 @@ const storesType = t.type({
 });
 const getStores = () => {
     try {
-        const storesInfo = require("../stores.json");
+        const storesInfo = require("../storesInfo.json");
         if (storesType.is(storesInfo)) {
             return (storesInfo.stores);
         }
